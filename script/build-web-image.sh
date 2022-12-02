@@ -34,7 +34,10 @@ fi
 VERSION=$(date +%Y%m%d%H%M%S)
 IMAGE_NAME = <IP address>/kubernetes/${JOB_NAME}:${VERSION}
 
+echo "${IMAGE_NAME}" > ${WORKSPACE}/image
 echo "building image: ${IMAGE_NAME}"
 docker build -t ${IMAGE_NAME} .
+
+
 
 docker push ${IMAGE_NAME}

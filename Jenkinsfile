@@ -1,6 +1,7 @@
 node {
     env.BUILD_DIR = "./build-workspace"
     env.MODULE = "web-demo"
+    env.HOST = "k8s-web.com"
     stage('Preparation') {
         git 'https://git.imooc.com/coding-335/mooc-k8s-demo-docker.git'
     }

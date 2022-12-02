@@ -12,3 +12,5 @@ When the installation is complete, you can start putting Jenkins to work!
 
 ## Create Jenkins Job - k8s web demo
 1. Jenkins Pipeline script
+2. Build web image script
+3. Deploy script
